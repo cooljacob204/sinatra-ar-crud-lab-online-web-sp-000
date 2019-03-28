@@ -1,4 +1,4 @@
-<form action='/articles/<%= @article.id %>/edit' method='patch'>
+<form action='/articles/<%= @article.id %>/edit' method='post'>
    title: <input type='text' name='title' value=<%= @article.title %> >
    content: <input type='text' name='content' value=<%= @article.content %> >
    <input type="submit" id="submit">
