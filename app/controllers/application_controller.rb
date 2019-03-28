@@ -48,6 +48,6 @@ class ApplicationController < Sinatra::Base
   end
   
   delete '/articles/:id/delete'
-    @ar
+    Article.find_by_id(params[:id]).delete
   end
 end
